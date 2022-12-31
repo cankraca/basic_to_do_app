@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "242994729249",
+    "project_id": "basic-to-do-database",
+    "storage_bucket": "basic-to-do-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242994729249:android:2578a50be3dfcf42836e60",
+        "android_client_info": {
+          "package_name": "com.example.basic_todo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242994729249-uptb5crgoqaba2o1a1g6e7uum1uq72mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr1bi9W6fAbRlMM-67-vdi-SQtyypL_Io"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242994729249-uptb5crgoqaba2o1a1g6e7uum1uq72mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
