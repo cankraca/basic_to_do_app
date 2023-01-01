@@ -40,6 +40,7 @@ class _MyTaskState extends State<MyTask> {
 
   CheckboxListTile _myListile() {
     bool isChecked = widget.isDone;
+    CrudOperations crud = CrudOperations();
     return CheckboxListTile(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.0),
@@ -58,7 +59,7 @@ class _MyTaskState extends State<MyTask> {
       onChanged: (value) {
         setState(() {
           isChecked = value!;
-          CrudOperations().updateCheckBox(widget.id, isChecked);
+          crud.updateCheckBox(widget.id, isChecked);
         });
       },
     );

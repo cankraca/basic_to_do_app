@@ -8,7 +8,7 @@ class CrudOperations {
       _taskReference.snapshots().map((snapshot) =>
           snapshot.docs.map((doc) => ModelTask.fromJson(doc.data())).toList());
 
-  Future createTask(String task, bool isDone) async {
+  Future<void> createTask(String task, bool isDone) async {
     final docTask = _taskReference.doc();
 
     final taskJson = ModelTask(
@@ -17,7 +17,7 @@ class CrudOperations {
       isDone: isDone,
     ).toJson();
 
-    docTask.set(taskJson);
+    await docTask.set(taskJson);
   }
 
   Future<void> deleteTask(String id) async {
@@ -25,6 +25,6 @@ class CrudOperations {
   }
 
   Future<void> updateCheckBox(id, isChecked) async {
-    _taskReference.doc(id).update({'isDone': isChecked});
+    await _taskReference.doc(id).update({'isDone': isChecked});
   }
 }
